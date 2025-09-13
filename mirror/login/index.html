@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mirror App</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Header Banner -->
+    <header class="banner">
+        <div class="banner-content">
+            <div class="logo-section">
+                <img src="../../logo_name.png" alt="Mirror App Name" class="app-name-img">
+            </div>
+            <a href="../../index.html" class="back-to-home-btn">Back to Home</a>
+        </div>
+    </header>
+
+    <!-- Login Section -->
+    <main class="login-main">
+        <div class="login-container">
+            <div class="login-card">
+                <div class="login-header">
+                    <h1>Welcome to Mirror</h1>
+                    <p>Enter your phone number to get started</p>
+                </div>
+
+                <form class="login-form" id="loginForm">
+                    <div class="phone-input-group">
+                        <div class="country-code">
+                            <select id="countryCode" class="country-select">
+                                <option value="+91" selected>🇮🇳 +91</option>
+                                <!-- <option value="+1">🇺🇸 +1</option>
+                                <option value="+44">🇬🇧 +44</option>
+                                <option value="+33">🇫🇷 +33</option>
+                                <option value="+49">🇩🇪 +49</option>
+                                <option value="+86">🇨🇳 +86</option>
+                                <option value="+81">🇯🇵 +81</option>
+                                <option value="+82">🇰🇷 +82</option>
+                                <option value="+61">🇦🇺 +61</option>
+                                <option value="+55">🇧🇷 +55</option> -->
+                            </select>
+                        </div>
+                        <div class="phone-input">
+                            <input 
+                                type="tel" 
+                                id="phoneNumber" 
+                                placeholder="Enter your phone number"
+                                maxlength="15"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="send-otp-btn" id="sendOtpBtn">
+                            <span class="btn-text">Send OTP</span>
+                            <span class="btn-loader" style="display: none;">
+                                <div class="spinner"></div>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="otp-section" id="otpSection" style="display: none;">
+                        <div class="otp-header">
+                            <h3>Enter OTP</h3>
+                            <p>We've sent a 6-digit code to <span id="phoneDisplay"></span></p>
+                        </div>
+                        
+                        <div class="otp-input-group">
+                            <input type="text" class="otp-digit" maxlength="1" data-index="0">
+                            <input type="text" class="otp-digit" maxlength="1" data-index="1">
+                            <input type="text" class="otp-digit" maxlength="1" data-index="2">
+                            <input type="text" class="otp-digit" maxlength="1" data-index="3">
+                            <input type="text" class="otp-digit" maxlength="1" data-index="4">
+                            <input type="text" class="otp-digit" maxlength="1" data-index="5">
+                        </div>
+
+                        <div class="otp-actions">
+                            <button type="button" class="resend-otp-btn" id="resendOtpBtn">
+                                Resend OTP
+                            </button>
+                            <button type="button" class="verify-otp-btn" id="verifyOtpBtn">
+                                Verify & Login
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="login-footer">
+                        <p>By continuing, you agree to our <a href="#" class="terms-link">Terms of Service</a> and <a href="#" class="privacy-link">Privacy Policy</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mirror App. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>
