@@ -379,32 +379,12 @@ footer {
 .footer-bottom {
     border-top: 1px solid #333;
     padding-top: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    text-align: center;
 }
 
 .footer-bottom p {
     color: #999;
     margin: 0;
-}
-
-.social-links {
-    display: flex;
-    gap: 15px;
-}
-
-.social-link {
-    display: inline-block;
-    font-size: 1.5rem;
-    text-decoration: none;
-    transition: transform 0.3s ease;
-}
-
-.social-link:hover {
-    transform: translateY(-2px);
 }
 
 /* Responsive Design */
@@ -479,15 +459,5 @@ footer {
     .footer-content {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-    }
-    
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-    }
-    
-    .social-links {
-        justify-content: center;
     }
 }
