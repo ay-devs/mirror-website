@@ -1,8 +1,15 @@
-[{
-    "relation": ["delegate_permission/common.handle_all_urls"],
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.aydevs.themirror",
-      "sha256_cert_fingerprints": ["2E:B8:BE:7D:1F:0A:00:99:73:5F:11:C6:96:93:D4:70:B9:20:1C:DD:3F:47:4E:01:DF:C1:F6:06:64:9E:5A:84"]
+      "sha256_cert_fingerprints": [
+        "2E:B8:BE:7D:1F:0A:00:99:73:5F:11:C6:96:93:D4:70:B9:20:1C:DD:3F:47:4E:01:DF:C1:F6:06:64:9E:5A:84",
+        "37:88:95:F3:16:C3:7E:02:EF:8F:9B:46:4C:F3:F0:D0:31:5F:BD:63:63:3A:BE:8C:96:5F:BE:C8:76:5D:4E:3D"
+      ]
     }
-  }]
+  }
+]
